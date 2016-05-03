@@ -15,11 +15,7 @@ public class Kurslista {
 		kurslista.add(nyKurs);
 	}
 	
-	public void getKurs(String kursid) {
-		
-	}
-	
-	public ArrayList getKurslista() {
+	public ArrayList<Kurs> getKurslista() {
 		return kurslista;
 	}
 	
@@ -32,6 +28,8 @@ public class Kurslista {
 		
 		kurslista.get(0).addMoment("Laboration", "Uppgift 1");
 		kurslista.get(0).addMoment("Hemtenta", "TENT");
+		
+		kurslista.get(0).init();
 
 	}
 }

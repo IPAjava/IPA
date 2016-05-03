@@ -20,8 +20,16 @@ public class Moment {
 		momentdeltagare = new ArrayList<>();
 	}
 	
-	public void getMomentdeltagare() {
-		
+	public ArrayList<Momentdeltagare> getMomentdeltagare() {
+		return momentdeltagare;
+	}
+	
+	public String getMomentNamn() {
+		return namn;
+	}
+	
+	public String getMomentid() {
+		return momentid;
 	}
 	
 	public void addMomentdeltagare() {

@@ -28,20 +28,34 @@ public class Kurs {
 		deltagarlista.add(nyKursdeltagare);
 	}
 	
-	public void getMomentlista() {
-		
+	public String getKursid() {
+		return kursid;
+	}
+	
+	public String getKursnamn() {
+		return namn;
+	}
+	
+	public ArrayList<Moment> getMomentlista() {
+		return momentlista;
 	}
 	
 	public void getMoment(String momentid) {
 		
 	}
 	
-	public void getDeltagarlista() {
-		
+	public ArrayList<Kursdeltagare> getDeltagarlista() {
+		return deltagarlista;
 	}
 	
 	public void getDeltagare(String studentid) {
 		
+	}
+	
+	public void init() {
+		for (Moment m : momentlista) {
+			m.addMomentdeltagare();
+		}
 	}
 	
 
