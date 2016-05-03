@@ -19,7 +19,7 @@ public class Kurs {
 	}
 	
 	public void addMoment(String namn, String momentid) {
-		Moment nyttMoment = new Moment(namn, momentid);
+		Moment nyttMoment = new Moment(namn, momentid, deltagarlista);
 		momentlista.add(nyttMoment);
 	}
 	
@@ -32,7 +32,15 @@ public class Kurs {
 		
 	}
 	
+	public void getMoment(String momentid) {
+		
+	}
+	
 	public void getDeltagarlista() {
+		
+	}
+	
+	public void getDeltagare(String studentid) {
 		
 	}
 }

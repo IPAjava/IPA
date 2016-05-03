@@ -6,7 +6,6 @@ public class Kurslista {
 
 	private ArrayList<Kurs> Kurslista;
 	
-	// Konstruktor
 	public Kurslista() {
 		Kurslista = new ArrayList<>();
 	}
