@@ -43,4 +43,6 @@ public class Kurs {
 	public void getDeltagare(String studentid) {
 		
 	}
+	
+
 }

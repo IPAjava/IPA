@@ -1,10 +1,19 @@
 package systemstart;
 
+import java.util.ArrayList;
+
+import kurser.Kurs;
+import kurser.Kurslista;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Kurslista test = new Kurslista();
+		test.init();
+	
+		
+	
 	}
 
 }
