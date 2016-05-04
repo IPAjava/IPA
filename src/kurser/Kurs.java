@@ -52,7 +52,7 @@ public class Kurs {
 		
 	}
 	
-	public void init() {
+	public void initMomentdeltagare() {
 		for (Moment m : momentlista) {
 			m.addMomentdeltagare();
 		}

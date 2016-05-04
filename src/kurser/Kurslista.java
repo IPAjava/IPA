@@ -29,7 +29,7 @@ public class Kurslista {
 		kurslista.get(0).addMoment("Laboration", "Uppgift 1");
 		kurslista.get(0).addMoment("Hemtenta", "TENT");
 		
-		kurslista.get(0).init();
+		kurslista.get(0).initMomentdeltagare();
 
 	}
 }
