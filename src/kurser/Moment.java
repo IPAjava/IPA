@@ -71,7 +71,7 @@ public class Moment {
 			if(existDeltagare == true){
 				momentdeltagare.get(currentDeltagare).print(kurslista, this);
 			} else {
-				System.out.println("Momentkoden du valt existerar inte. \nFörsök igen:");
+				System.out.println("Studentid:t du valt existerar inte. \nFörsök igen:");
 			}
 		}
 		kbinput.close();
