@@ -23,8 +23,11 @@ public class KursTest {
 			System.err.println("Testkursens namn och id skrivs inte in korrekt.");
 		}
 		
-		testkurs.addDeltagare("abc123");
-		testkurs.addMoment("Testtent", "T1");
+		Kursdeltagare kursdeltagare = new Kursdeltagare("abc123");
+		testkurs.addDeltagare(kursdeltagare);
+		
+		Moment moment = new Moment("Testtent", "T1");
+		testkurs.addMoment(moment);
 		ArrayList<Kursdeltagare> dellist = new ArrayList<>();
 		dellist = testkurs.getDeltagarlista();
 		String deltagare = dellist.get(0).getStudentid();

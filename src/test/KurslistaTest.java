@@ -14,7 +14,8 @@ public class KurslistaTest {
 	public static void test(){
 		System.out.println("Nu testas klassen Kurslista:");
 		Kurslista kurslista = new Kurslista();
-		kurslista.addKurs("Testkurs", "123T45");
+		Kurs kurs1 = new Kurs("Testkurs", "123T45");
+		kurslista.addKurs(kurs1);
 		ArrayList<Kurs> kurslist = new ArrayList<>();
 		kurslist = kurslista.getKurslista();
 		String kursnamn = kurslist.get(0).getKursnamn();

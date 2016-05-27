@@ -20,8 +20,10 @@ public class MomentTest {
 		deltagarlista.add(student1);
 		deltagarlista.add(student2);
 		
-		Moment m1 = new Moment("Testmoment1", "T1", deltagarlista);
-		Moment m2 = new Moment("Testmoment2", "T2", deltagarlista);
+		
+		
+		Moment m1 = new Moment("Testmoment1", "T1");
+		Moment m2 = new Moment("Testmoment2", "T2");
 		String m1namn = m1.getMomentNamn();
 		String m2namn = m2.getMomentNamn();
 		String m1id = m1.getMomentid();
@@ -39,7 +41,12 @@ public class MomentTest {
 			System.err.println("Momentens id skrivs inte in korrekt.");
 		}
 		
-		m1.addMomentdeltagare();
+		Momentdeltagare momdel1 = new Momentdeltagare("Testmoment1", "abc123");
+		Momentdeltagare momdel2 = new Momentdeltagare("Testmoment1", "def457");
+		m1.addMomentdeltagare(momdel1);
+		m1.addMomentdeltagare(momdel2);
+
+		
 		ArrayList<Momentdeltagare> testdeltagare = new ArrayList<>();
 		testdeltagare = m1.getMomentdeltagare();
 		

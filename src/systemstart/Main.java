@@ -1,6 +1,6 @@
 package systemstart;
 
-import kurser.*;
+
 
 public class Main {
 
@@ -9,9 +9,8 @@ public class Main {
 	}
 	
 	public static void run() {
-		Kurslista kurslista = new Kurslista();
-		kurslista.init();
-		kurslista.print();
+		Initiera init = new Initiera();
+		init.init();
 	}
 
 }
