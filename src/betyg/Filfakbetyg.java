@@ -1,10 +1,11 @@
-package deltagare;
+package betyg;
 
-public class Betyg {
+public class Filfakbetyg implements Betygsadapter {
 
 	private String betyg;
 	
-	public Betyg(String betyg) {
+	
+	public Filfakbetyg(String betyg) {
 		this.betyg = betyg;
 	}
 	
@@ -15,5 +16,7 @@ public class Betyg {
 	public void updateBetyg(String betyg) {
 		this.betyg = betyg;
 	}
+	
+	
 	
 }
